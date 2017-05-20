@@ -13,7 +13,9 @@ It means given twin boxes, the pair values contained by twins will be locked. Th
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
 A: 
 Constraint propgation can be seen as a step-by-step jounery to the true solution. The jounery is directed by multiple constraints which will progressively narrow down possible solutions until true solution. More constraints, the shorter path to true solution.
+
 Diagonal consanstraint will also help faster converge. Diagnal constraints is achieved by below codes:
+
 diagnol_units=[list(map(lambda x,y:x+y, rows, cols))]+ [list(
         map(lambda x,y:x+y, rows, cols[::-1]))]
 unitlist = row_units + column_units + square_units+diagnol_units
