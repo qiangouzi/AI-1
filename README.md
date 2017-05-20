@@ -3,7 +3,7 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: 
 Constraint propgation can be seen as a step-by-step jounery to the true solution. The jounery is directed by multiple constraints which will progressively narrow down possible solutions until true solution.
 
 Nake twins represent a new constraint besided existing constraints on onlyvalue and elimination. It will help faster converge.
@@ -11,7 +11,7 @@ It means given twin boxes, the pair values contained by twins will be locked. Th
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: 
 Constraint propgation can be seen as a step-by-step jounery to the true solution. The jounery is directed by multiple constraints which will progressively narrow down possible solutions until true solution. More constraints, the shorter path to true solution.
 Diagonal consanstraint will also help faster converge. Diagnal constraints is achieved by below codes:
 diagnol_units=[list(map(lambda x,y:x+y, rows, cols))]+ [list(
